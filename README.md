@@ -3,7 +3,7 @@ A personal project of which is a  simple snake game using java FX.
 
 Snake Game Main tasks: 
 
-####  1) The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
+####  The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
 ##### GamePanel-- A grid of which houses the apple and snake along with a scoreboard.
 ##### Apple: Of which should be randomly generated on the grid.
 ##### Snake: Should grow everytime an apple is eaten by the snake. 
@@ -31,12 +31,12 @@ allow the user to play Mastermind against the computer. The computer should gene
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/73240114/145914149-fc29997f-db8f-4a2a-a0ba-2f589f8e622c.png)
-
+![image](https://user-images.githubusercontent.com/73240114/147375838-79dee557-631a-433a-8920-306de5bfd43f.png)
 
 #### Example
+
 Going into the **Game Over Message with Scoreboard**: 
-![image](https://user-images.githubusercontent.com/73240114/145914244-502392ec-377c-472f-aeeb-7cf9215f2813.png)
+![image](https://user-images.githubusercontent.com/73240114/147375804-75f76e22-8286-4a4a-a568-8ca11ca42afe.png)
 
 
 ## Requirements 🔧
