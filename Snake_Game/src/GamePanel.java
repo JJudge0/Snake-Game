@@ -8,7 +8,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.JPanel;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-
+//FIXES:
+//1) Fixed Scoreboard problem!
+//2) Added multicolored Snake!
+//3) Grid is optional I enabled it for now!
 public  class GamePanel extends JPanel implements ActionListener {
 
 	
