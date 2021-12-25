@@ -13,9 +13,9 @@ Snake Game Main tasks:
 #### -----------------------------------------------------------Personal Project-----------------------------------------------
 
 ### Contains 3 files called:
-#### 1) Game Frame file
-#### 2) Game Panel file
-#### 3) Snake Game file
+### 1) Game Frame file
+### 2) Game Panel file
+### 3) Snake Game file
 
 
 ## Screenshots
