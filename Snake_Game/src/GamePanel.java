@@ -112,7 +112,7 @@ public  class GamePanel extends JPanel implements ActionListener {
 		}
 		else
 		{
-			gameover(g);
+			gameover(g); //displays Game over message after player has lost the game.
 		}
 	}
 	public void newApple()// Populates game with apple when scoring a point
