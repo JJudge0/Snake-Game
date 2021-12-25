@@ -12,7 +12,7 @@ Snake Game Main tasks:
 
 
 
-####  3) The number of allowed guesses is 12. If the player runs out of guesses, the computer should tell them that they have lost the game and reveal the code. If the player enters the correct code, they win the game, and the computer should print a congratulatory Updated August 2020 4 of 7 Department of Computer Science message. Irrespective of whether the player wins or loses, the program should ask the user if they want to play again or quit. 
+
 
 ####  4) Variations: • Student A: At the start of the game, the player should be able to choose the number of the colours in the range (6-10), the number of colours in the code (3 or 4), and the maximum number of guesses allowed. At the end of each game, a score should be displayed. The score is calculated by taking the number of guesses remaining, adding the number of colours in the range, then adding the number of colours in the code. 
 
