@@ -10,10 +10,6 @@ Snake Game Main tasks:
 #### ScoreBoard: Should display the score when a snake eats a apple.
 #### GameOver: A gameover when the user dies by eating itself, crashing into border.
 
-
-
-####  5)• Student B: The player should be able to choose whether they want to play with repeating colours in the code or not. If they choose to play with repeating colours, the game should correctly support this through the gameplay. Ideas for additional functionalities for either variation (optional): ➢ The program keeps the player vs computer score; for example, if the player has won a game, the score is 1-0. If the player continues playing, the score should be updated after each game, accordingly. ➢ Your own ideas.
-
 #### -----------------------------------------------------------Personal Project-----------------------------------------------
 
 ### Contains 3 files called:
