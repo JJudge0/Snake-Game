@@ -33,6 +33,7 @@ Snake Game Main tasks:
 #### Example
 
 Going into the **Game Over Message with Scoreboard**: 
+
 ![image](https://user-images.githubusercontent.com/73240114/147375804-75f76e22-8286-4a4a-a568-8ca11ca42afe.png)
 
 
