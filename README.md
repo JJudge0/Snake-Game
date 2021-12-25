@@ -3,9 +3,9 @@ A personal project of which is a  simple snake game using java FX.
 
 Snake Game Main tasks: 
 
-####  1) The program should include a Apple,Snake,ScoreBoard,GameOver message.
-##### Apple:
-##### Snake:
+####  1) The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
+##### Apple: of which should be randomly generated on the grid.
+##### Snake: should grow everytime a apple is eaten.  
 ##### ScoreBoard:
 ##### GameOver:
 ##### Message:
