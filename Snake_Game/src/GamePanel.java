@@ -97,6 +97,7 @@ public  class GamePanel extends JPanel implements ActionListener {
 				else
 				{
 					g.setColor(new Color(45,180,0));
+					g.setColor( new Color(Random.nextInt(255),Random.nextInt(255),Random.nextInt(255))); //Multi colored snake changes
 					g.fillRect(x[i],y[i],UNIT_SIZE, UNIT_SIZE);
 				}
 			}
@@ -185,10 +186,16 @@ public  class GamePanel extends JPanel implements ActionListener {
 		//game overtext
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Arial",Font.BOLD,45)); // Gives the output message a font/ Size of the text
-		FontMetrics metrics = getFontMetrics(g.getFont());
+		FontMetrics metrics1 = getFontMetrics(g.getFont());
 		String Game_Over_Message= "Game Over!!!";
-		String Score = "Score:" + Apples_Eaten;
-		g.drawString(Game_Over_Message + Score,(SCREEN_WIDTH- metrics.stringWidth(Game_Over_Message + Score))/2,SCREEN_HEIGHT/2); //Displays game over and score within the panel frame.
+		g.drawString(Game_Over_Message,(SCREEN_WIDTH- metrics1.stringWidth(Game_Over_Message))/2,SCREEN_HEIGHT/2); //Displays game over and score within the panel frame.
+
+
+		g.setColor(Color.BLACK);
+		g.setFont(new Font("Arial",Font.BOLD,20)); // Gives the output message a font/ Size of the text
+		FontMetrics metrics2 = getFontMetrics(g.getFont());
+		String Message= "Score:"+ Apples_Eaten*2;
+		g.drawString(Message,(SCREEN_WIDTH- metrics2.stringWidth(Message))/2,g.getFont().getSize());
 	}
 	
 	
