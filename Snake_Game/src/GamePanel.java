@@ -44,10 +44,10 @@ public  class GamePanel extends JPanel implements ActionListener {
 	Random Random;
 	
 	GamePanel()
-	{
-        Random = new Random();
+	{                     
+        Random = new Random();  // Goes to the apple method and generates a new apple on the grid
         this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
-        this.setBackground(Color.white);
+        this.setBackground(Color.WHITE); // Sets background to be white it's changeable: Red,Blue,Green,Black,White,Purple,Cyan
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         StartGame();
@@ -103,7 +103,7 @@ public  class GamePanel extends JPanel implements ActionListener {
 			g.setColor(Color.BLACK);
 			g.setFont(new Font("Arial",Font.BOLD,20)); // Gives the output message a font/ Size of the text
 			FontMetrics metrics = getFontMetrics(g.getFont());
-			String Message= "Score:"+ Apples_Eaten;
+			String Message= "Score:"+ Apples_Eaten*2;
 			g.drawString(Message,(SCREEN_WIDTH- metrics.stringWidth(Message))/2,g.getFont().getSize());
 		}
 		else
@@ -188,32 +188,36 @@ public  class GamePanel extends JPanel implements ActionListener {
 		FontMetrics metrics = getFontMetrics(g.getFont());
 		String Game_Over_Message= "Game Over!!!";
 		String Score = "Score:" + Apples_Eaten;
-		g.drawString(Game_Over_Message + Score,(SCREEN_WIDTH- metrics.stringWidth(Game_Over_Message))/2,SCREEN_HEIGHT/2);
+		g.drawString(Game_Over_Message + Score,(SCREEN_WIDTH- metrics.stringWidth(Game_Over_Message + Score))/2,SCREEN_HEIGHT/2); //Displays game over and score within the panel frame.
 	}
 	
 	
 	public class MyKeyAdapter extends KeyAdapter{
-		 @Override // Important use for controls 
+		 @Override // Important use for controls, when a arrow key is pressed it ensures each direction is correct
 		public void keyPressed(KeyEvent e)
 		{
 			switch(e.getKeyCode()) {
-			case KeyEvent.VK_LEFT:
-				if(Direction != 'R') {
+			case KeyEvent.VK_LEFT: // Player should go Left not Right 
+				if(Direction != 'R') 
+				{
 					Direction = 'L';
 				}
 				break;
 			case KeyEvent.VK_RIGHT:
-				if(Direction != 'L') {
+				if(Direction != 'L') // Player should go Right not Left
+				{
 					Direction = 'R';
 				}
 				break;
 			case KeyEvent.VK_UP:
-				if(Direction != 'D') {
+				if(Direction != 'D') // Player should go Down not Up
+				{
 					Direction = 'U';
 				}
 				break;
 			case KeyEvent.VK_DOWN:
-				if(Direction != 'U') {
+				if(Direction != 'U') // Player should go Up not Down
+				{
 					Direction = 'D';
 				}
 				break;
