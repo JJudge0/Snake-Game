@@ -4,12 +4,12 @@ A personal project of which is a  simple snake game using java FX.
 Snake Game Main tasks: 
 
 ####  1) The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
-##### Apple: of which should be randomly generated on the grid.
-##### Snake: should grow everytime a apple is eaten.  
-##### ScoreBoard:
-##### GameOver:
-##### Message:
-of which should be randomly generated on the grid.
+##### GamePanel-- A grid of which houses the apple and snake along with a scoreboard.
+##### Apple: Of which should be randomly generated on the grid.
+##### Snake: Should grow everytime an apple is eaten by the snake. 
+##### ScoreBoard: Should display the score when a snake eats a apple.
+##### GameOver: A gameover when the user dies by eating itself, crashing into border.
+
 ####  2) The player should be able to enter a guess,
 allow the user to play Mastermind against the computer. The computer should generate a random code of four colours from a range of six different colours (e.g., Red, Green, Blue, Yellow, Orange, Pink). There should not be any repeating colours in the generated code. 
 
@@ -21,12 +21,12 @@ allow the user to play Mastermind against the computer. The computer should gene
 
 ####  5)• Student B: The player should be able to choose whether they want to play with repeating colours in the code or not. If they choose to play with repeating colours, the game should correctly support this through the gameplay. Ideas for additional functionalities for either variation (optional): ➢ The program keeps the player vs computer score; for example, if the player has won a game, the score is 1-0. If the player continues playing, the score should be updated after each game, accordingly. ➢ Your own ideas.
 
-#### -----------------------------------------------------------My University Project-----------------------------------------------
+#### -----------------------------------------------------------Personal Project-----------------------------------------------
 
 ### Contains 3 files called:
-#### 1) MasterMind main game file
-#### 2) Player name file
-#### 3) Settings file
+#### 1) Game Frame file
+#### 2) Game Panel file
+#### 3) Snake Game file
 
 
 ## Screenshots
@@ -35,11 +35,9 @@ allow the user to play Mastermind against the computer. The computer should gene
 
 
 #### Example
-Going into the **Setting Option**: 
+Going into the **Game Over Message with Scoreboard**: 
 ![image](https://user-images.githubusercontent.com/73240114/145914244-502392ec-377c-472f-aeeb-7cf9215f2813.png)
 
-Going into the **Playing the game**: 
-![image](https://user-images.githubusercontent.com/73240114/145915743-ddb59e75-cd43-4013-b0b8-9b51a37fdc9a.png)
 
 ## Requirements 🔧
 Java version 8 or higher.
@@ -49,7 +47,7 @@ Java version 8 or higher.
 
 #### 2) Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
 
-#### 3) git clone https://github.com/JJudge0/Assignment2_Game3_Mastermind.git
+#### 3) git clonehttps://github.com/JJudge0/Snake-Game.git
 Import it in VS CODE or any other Java IDE.
 
 Run the application :D
