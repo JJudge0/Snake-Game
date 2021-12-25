@@ -6,12 +6,10 @@ Snake Game Main tasks:
 ### The program should include the following: GamePanel,Apple,Snake,ScoreBoard,GameOver message;
 #### GamePanel-- A grid of which houses the apple and snake along with a scoreboard.
 #### Apple: Of which should be randomly generated on the grid.
-##### Snake: Should grow everytime an apple is eaten by the snake. 
-##### ScoreBoard: Should display the score when a snake eats a apple.
-##### GameOver: A gameover when the user dies by eating itself, crashing into border.
+#### Snake: Should grow everytime an apple is eaten by the snake. 
+#### ScoreBoard: Should display the score when a snake eats a apple.
+#### GameOver: A gameover when the user dies by eating itself, crashing into border.
 
-####  2) The player should be able to enter a guess,
-allow the user to play Mastermind against the computer. The computer should generate a random code of four colours from a range of six different colours (e.g., Red, Green, Blue, Yellow, Orange, Pink). There should not be any repeating colours in the generated code. 
 
 ####  2) The player should be able to enter a guess, for example ‘RGBY’. The program should print ‘+’ if the colour occurs in the code and is in the right position and ‘-’ if the guessed colour is in the code but is in the wrong position. Any ‘+’ symbols should be displayed first, and, the computer does not reveal which colour in the guess was right. So, for example, if the player’s guess was ‘GPBY’ and the code was ‘RGBY’, the computer should display: ++-.
 
