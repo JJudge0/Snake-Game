@@ -10,7 +10,7 @@ public class GameFrame extends JFrame{
 		this.add(panel);
 		this.setTitle("Snake Game by JJudge0");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setResizable(false);
+		this.setResizable(false); // Needs to be false other creates white spacing around the frame.
 		this.pack();
 		this.setVisible(true);
 		this.setLocationRelativeTo(null);
