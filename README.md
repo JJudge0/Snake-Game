@@ -26,7 +26,7 @@ Snake Game Main tasks:
 
 Going into the **Game Over Message with Scoreboard**: 
 
-![image](https://user-images.githubusercontent.com/73240114/147375804-75f76e22-8286-4a4a-a568-8ca11ca42afe.png)
+![image](https://user-images.githubusercontent.com/73240114/147376122-9d3f495d-78d5-4ceb-aad6-a99882f01e83.png)
 
 
 ## Requirements 🔧
