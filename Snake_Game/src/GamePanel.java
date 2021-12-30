@@ -34,7 +34,7 @@ public  class GamePanel extends JPanel implements ActionListener {
 	static final int SCREEN_HEIGHT =600;
 	static final int UNIT_SIZE =25; //objects in the game that will be on the grid ( GRID SIZE)
 	static final int GAME_UNITS= (SCREEN_WIDTH*SCREEN_HEIGHT)/UNIT_SIZE; 
-	static final int DELAY= 75; // Higher number slower the game is
+	static final int DELAY= 75; // Higher number slower the game is.
 	final int x[]= new int[GAME_UNITS];
 	final int y[]= new int[GAME_UNITS];
 	int Body_Parts =6;// body parts for the snake
@@ -50,7 +50,7 @@ public  class GamePanel extends JPanel implements ActionListener {
 	{                     
         Random = new Random();  // Goes to the apple method and generates a new apple on the grid
         this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
-        this.setBackground(Color.WHITE); // Sets background to be white it's changeable: Red,Blue,Green,Black,White,Purple,Cyan
+        this.setBackground(Color.BLACK); // Sets background to be white it's changeable: Red,Blue,Green,Black,White,Purple,Cyan
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         StartGame();
@@ -77,12 +77,12 @@ public  class GamePanel extends JPanel implements ActionListener {
 	{ 
 		if (Running)
 		{
-			// Grid allows visual dynamic so we can see where the snake and apple is on the grid! NOTE: COMMENT OUT LATER ON!!
+			//Grid allows visual dynamic so we can see where the snake and apple is on the grid! NOTE: COMMENT OUT LATER ON!!
 			for( int i=0; i<SCREEN_HEIGHT/UNIT_SIZE;i++)
 			{
 				g.drawLine(i*UNIT_SIZE,0,i*UNIT_SIZE, SCREEN_HEIGHT);// Draws Y axis lines
 				g.drawLine(0,i*UNIT_SIZE,SCREEN_WIDTH, i*UNIT_SIZE); // Draws X axis lines
-				//	g.drawLine(i*UNIT_SIZE,0,SCREEN_WIDTH, i*UNIT_SIZE); // draws a spiral  (NOT NEEDED) testing
+			// 	g.drawLine(i*UNIT_SIZE,0,SCREEN_WIDTH, i*UNIT_SIZE); // draws a spiral  (NOT NEEDED) testing
 			}
 			////////////////
 			g.setColor(Color.red);
@@ -104,7 +104,7 @@ public  class GamePanel extends JPanel implements ActionListener {
 					g.fillRect(x[i],y[i],UNIT_SIZE, UNIT_SIZE);
 				}
 			}
-			g.setColor(Color.BLACK);
+			g.setColor(Color.WHITE);
 			g.setFont(new Font("Arial",Font.BOLD,20)); // Gives the output message a font/ Size of the text
 			FontMetrics metrics = getFontMetrics(g.getFont());
 			String Message= "Score:"+ Apples_Eaten*2;
@@ -187,14 +187,14 @@ public  class GamePanel extends JPanel implements ActionListener {
 	public void gameover ( Graphics g)
 	{
 		//game overtext
-		g.setColor(Color.BLACK);
+		g.setColor(Color.WHITE);
 		g.setFont(new Font("Arial",Font.BOLD,45)); // Gives the output message a font/ Size of the text
 		FontMetrics metrics1 = getFontMetrics(g.getFont());
 		String Game_Over_Message= "Game Over!!!";
 		g.drawString(Game_Over_Message,(SCREEN_WIDTH- metrics1.stringWidth(Game_Over_Message))/2,SCREEN_HEIGHT/2); //Displays game over and score within the panel frame.
 
 
-		g.setColor(Color.BLACK);
+		g.setColor(Color.WHITE);
 		g.setFont(new Font("Arial",Font.BOLD,20)); // Gives the output message a font/ Size of the text
 		FontMetrics metrics2 = getFontMetrics(g.getFont());
 		String Message= "Score:"+ Apples_Eaten*2;
