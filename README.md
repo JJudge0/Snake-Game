@@ -37,7 +37,7 @@ Java version 8 or higher.
 
 #### 2) Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
 
-#### 3) git clonehttps://github.com/JJudge0/Snake-Game.git
+#### 3) git clone: https://github.com/JJudge0/Snake-Game.git
 Import it in VS CODE or any other Java IDE.
 
 Run the application :D
